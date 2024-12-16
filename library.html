@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="library.css" />
+    <script src="library-script.js" defer></script>
+  </head>
+  <body class="body">
+    <nav class="navbar">
+      <ul>
+        <div style="color: #dcbd96">Library</div>
+        <li><a href="Home">Home</a></li>
+        <li><a href="Home">Buy</a></li>
+        <li><a href="Home">Sell</a></li>
+        <li><a href="Home">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="box">
+      <button class="button" id="add-book">Add Book</button>
+    </div>
+
+    <div class="modal" id="modal">
+      <form class="form" id="book-form">
+        <h3>Add a book to your library</h3><span class="close-modal" id="close-modal">&times;</span>
+        <input type="text" placeholder="Title" id="title" />
+        <input type="text" placeholder="Author" id="author" />
+        <input type="number" placeholder="Pages" id="pages" />
+        <label for="isRead">
+          Did you read the book?<input type="checkbox" id="isRead" />
+        </label>
+        <button type="submit" id="store-book">Store Book</button>
+      </form>
+    </div>
+
+    <div class="bookcard" id="bookcard"></div>
+  </body>
+</html>
