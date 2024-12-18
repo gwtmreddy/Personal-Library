@@ -51,8 +51,8 @@ button {
   padding: 10px;
   border-color: #00000000;
   border-radius: 10px;
-  box-shadow: none; /* No shadow by default */
-  transition: box-shadow 0.3s ease; /* Smooth transition */
+  box-shadow: none; 
+  transition: box-shadow 0.3s ease; 
   box-shadow: 0 4px 8px hsla(0, 100%, 42%, 0.2);
 }
 
@@ -117,30 +117,27 @@ input[type="number"]:focus {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-
 .close-modal {
-    position: absolute;
-    top: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
-    font-size: 18px; /* Size of the 'x' */
-    color: white; /* Color of the 'x' */
-    cursor: pointer; /* Pointer cursor to indicate it's clickable */
-    background-color: transparent; /* No background */
-    border: none; /* No border */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .close-modal:hover {
-    color: #000000; /* Highlight color on hover */
+  color: #000000; /* Highlight color on hover */
 }
-
-
 
 /* bookcard */
 .bookcard {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next row */
-    gap: 20px; /* Space between cards */
-    justify-content: center; /* Center-align the cards */
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center; 
 }
 .book-card {
   font-family: "Bebas Neue", sans-serif;

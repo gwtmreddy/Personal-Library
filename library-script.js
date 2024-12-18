@@ -16,9 +16,8 @@ function Book(title, author, pages, isRead) {
 
 // Function to add a new book to the library
 function addBookToLibrary(title, author, pages, isRead) {
-  const newBook = new Book(title, author, pages, isRead); // Create a new Book object
-  myLibrary.push(newBook); // Add the new book to the library array
-  renderLibrary();
+  const newBook = new Book(title, author, pages, isRead); 
+  myLibrary.push(newBook); 
 }
 
 const addBook = document.getElementById("add-book");
@@ -59,8 +58,8 @@ function renderLibrary() {
   const removeButtons = document.querySelectorAll(".remove-book");
   removeButtons.forEach((button) => {
     button.addEventListener("click", (e) => {
-      const index = e.target.dataset.index; // Get the book's index
-      myLibrary.splice(index, 1); // Remove the book from the array
+      const index = e.target.dataset.index; 
+      myLibrary.splice(index, 1); 
       renderLibrary(); // Re-render the library
     });
   });
@@ -77,10 +76,8 @@ store.addEventListener("click", (e) => {
 
   // Clear the form and close the modal
   document.getElementById("title").value = "";
-  document.getElementById("author").value = ""; // Same typo as above
+  document.getElementById("author").value = "";
   document.getElementById("pages").value = "";
   document.getElementById("isRead").checked = false;
   modal.style.display = "none";
 });
-
-console.log(myLibrary);
